@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Puerperio: el cuidado de la madre después del parto. Página educativa e interactiva.">
+    <title>Puerperio · El cuidado de la madre después del parto</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="en-portada">
+
+<!-- ============ PORTADA / CARÁTULA INICIAL ============ -->
+<div class="portada" id="portada">
+    <!-- Logo PUERPERIO de fondo (marca de agua protagonista) -->
+    <img src="LOGO_PUERPERIO.png" alt="" class="portada__marca" aria-hidden="true">
+    <div class="portada__velo"></div>
+
+    <div class="portada__contenido">
+        <div class="portada__cabecera">
+            <div class="portada__institucion">
+                <img src="LOGO_INSTITUTO.jpeg" alt="Logo del Instituto Superior Tecnológico Universitario Libertad" class="portada__logo-inst">
+                <span>Instituto Superior Tecnológico Universitario Libertad</span>
+            </div>
+        </div>
+
+        <h1 class="portada__titulo">PUERPERIO</h1>
+        <p class="portada__subtitulo">El cuidado de la madre después del parto</p>
+
+        <div class="portada__tarjetas">
+            <div class="portada__tarjeta portada__tarjeta--integrantes">
+                <span class="portada__etiqueta">Integrantes</span>
+                <ul class="portada__lista">
+                    <li><span>01</span> María Saltos</li>
+                    <li><span>02</span> Jessica Lisintuña</li>
+                    <li><span>03</span> Milton Esparza</li>
+                    <li><span>04</span> Andy Jaramillo</li>
+                    <li><span>05</span> Steven Quera</li>
+                </ul>
+            </div>
+            <div class="portada__tarjeta portada__tarjeta--datos">
+                <span class="portada__etiqueta">Datos del trabajo</span>
+                <ul class="portada__lista portada__lista--datos">
+                    <li><span class="portada__clave">Curso</span> 3A</li>
+                    <li><span class="portada__clave">Fecha</span> 31/07/2026</li>
+                    <li><span class="portada__clave">Tema</span> Puerperio</li>
+                </ul>
+            </div>
+        </div>
+
+        <button class="portada__btn" id="btnComenzar">
+            <span>Comenzar</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+    </div>
+</div>
+
+<!-- ============ NAVEGACIÓN FIJA ============ -->
+<nav class="nav" id="nav">
+    <div class="nav__cont">
+        <a href="#contenido" class="nav__marca" id="navMarca">
+            <span class="nav__logo-circ">
+                <img src="LOGO_PUERPERIO.png" alt="Logo Puerperio" class="nav__logo">
+            </span>
+            <span class="nav__marca-texto">Puerperio</span>
+        </a>
+        <button class="nav__inicio" id="btnInicio" aria-label="Volver al inicio">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Inicio</span>
+        </button>
+        <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="navMenu">
+            <li><a href="#que-es">¿Qué es?</a></li>
+            <li><a href="#etapas">Etapas</a></li>
+            <li><a href="#cambios">Cambios</a></li>
+            <li><a href="#normales">Normales</a></li>
+            <li><a href="#complicaciones">Complicaciones</a></li>
+            <li><a href="#alarma">Alarma</a></li>
+            <li><a href="#diagnostico">Diagnóstico</a></li>
+            <li><a href="#cuidados">Cuidados</a></li>
+            <li><a href="#sabias">¿Sabías que?</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ============ CONTENIDO ============ -->
+<main id="contenido" class="contenido">
+
+    <!-- Frase introductoria -->
+    <section class="intro">
+        <p class="intro__frase">“El nacimiento del bebé también marca el inicio de una nueva etapa para la madre. Conocer el puerperio permite cuidar la salud de la madre, favorecer su recuperación y reconocer a tiempo cualquier signo de alarma.”</p>
+    </section>
+
+    <!-- ¿Qué es el puerperio? -->
+    <section class="seccion" id="que-es" data-anim>
+        <div class="seccion__head">
+            <span class="seccion__num">01</span>
+            <h2 class="seccion__titulo">¿Qué es el puerperio?</h2>
+        </div>
+        <div class="seccion__grid dos-cols">
+            <div class="seccion__texto">
+                <p>El <strong>puerperio</strong> es el período que comienza inmediatamente después del parto y durante el cual el cuerpo de la mujer inicia su recuperación. En esta etapa, el útero vuelve poco a poco a su tamaño normal, se producen cambios hormonales, comienza la lactancia y la madre se adapta física y emocionalmente a su nueva etapa.</p>
+                <div class="destacado">
+                    <span class="destacado__icono">⏱</span>
+                    <div>
+                        <strong>Duración aproximada:</strong> 6 semanas (42 días).
+                    </div>
+                </div>
+                <h3>Cambios importantes durante el puerperio</h3>
+                <ul class="lista-check">
+                    <li>El útero recupera su tamaño.</li>
+                    <li>Aparecen los loquios (sangrado normal después del parto).</li>
+                    <li>Se inicia la producción de leche materna.</li>
+                    <li>El organismo recupera su equilibrio.</li>
+                    <li>La madre necesita descanso, buena alimentación y apoyo familiar.</li>
+                </ul>
+                <p class="recordatorio">Recuerda: cada mujer vive el puerperio de manera diferente y su recuperación puede variar.</p>
+            </div>
+            <figure class="seccion__figura">
+                <img src="Definicion.jpeg" alt="Madre y recién nacido en el puerperio" loading="lazy">
+            </figure>
+        </div>
+    </section>
+
+    <!-- Etapas del puerperio -->
+    <section class="seccion" id="etapas" data-anim>
+        <div class="seccion__head">
+            <span class="seccion__num">02</span>
+            <h2 class="seccion__titulo">Etapas del puerperio</h2>
+        </div>
+        <div class="etapas">
+            <button class="etapa-btn activo" data-etapa="0">
+                <span class="etapa-btn__num">I</span>
+                <span class="etapa-btn__nombre">Puerperio inmediato</span>
+            </button>
+            <button class="etapa-btn" data-etapa="1">
+                <span class="etapa-btn__num">II</span>
+                <span class="etapa-btn__nombre">Puerperio mediato</span>
+            </button>
+            <button class="etapa-btn" data-etapa="2">
+                <span class="etapa-btn__num">III</span>
+                <span class="etapa-btn__nombre">Puerperio tardío</span>
+            </button>
+        </div>
+        <div class="etapa-panel activo" data-panel="0">
+            <h3>Puerperio inmediato</h3>
+            <p class="etapa-panel__tiempo">Primeras 24 horas después del parto.</p>
+            <p>Es la etapa de mayor vigilancia porque existe mayor riesgo de hemorragia. El personal de salud controla constantemente el estado de la madre.</p>
+        </div>
+        <div class="etapa-panel" data-panel="1">
+            <h3>Puerperio mediato</h3>
+            <p class="etapa-panel__tiempo">Desde el segundo hasta el séptimo día.</p>
+            <p>El cuerpo continúa recuperándose, disminuye el tamaño del útero y se establece la producción de leche materna.</p>
+        </div>
+        <div class="etapa-panel" data-panel="2">
+            <h3>Puerperio tardío</h3>
+            <p class="etapa-panel__tiempo">Desde el octavo día hasta las seis semanas.</p>
+            <p>Los órganos reproductores terminan su recuperación y la madre se adapta progresivamente a su nueva rutina.</p>
+        </div>
+    </section>
+
+    <!-- Cambios normales -->
+    <section class="seccion" id="cambios" data-anim>
+        <div class="seccion__head">
+            <span class="seccion__num">03</span>
+            <h2 class="seccion__titulo">Cambios normales durante el puerperio</h2>
+        </div>
+        <p class="seccion__intro">Toca cada tarjeta para conocer los detalles.</p>
+        <div class="acordeon">
+            <div class="acordeon__item">
+                <button class="acordeon__cabecera">Cambios en el útero <span class="acordeon__mas">+</span></button>
+                <div class="acordeon__cuerpo">
+                    <p>Después del parto, el útero comienza a contraerse para recuperar el tamaño que tenía antes del embarazo. Este proceso es completamente normal.</p>
+                </div>
+            </div>
+            <div class="acordeon__item">
+                <button class="acordeon__cabecera">Loquios <span class="acordeon__mas">+</span></button>
+                <div class="acordeon__cuerpo">
+                    <p>Los loquios son el sangrado normal que aparece después del parto. Su color cambia con el paso de los días:</p>
+                    <ul class="loquios">
+                        <li><span class="loquio rojo"></span> <strong>Rojo:</strong> primeros 3 días.</li>
+                        <li><span class="loquio marron"></span> <strong>Rosado o marrón:</strong> entre el cuarto y décimo día.</li>
+                        <li><span class="loquio blanco"></span> <strong>Blanco o amarillento:</strong> hasta la sexta semana.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="acordeon__item">
+                <button class="acordeon__cabecera">Cambios hormonales <span class="acordeon__mas">+</span></button>
+                <div class="acordeon__cuerpo">
+                    <p>Después del nacimiento del bebé disminuyen algunas hormonas del embarazo y aumentan las encargadas de producir leche materna. Estos cambios también pueden influir en el estado de ánimo.</p>
+                </div>
+            </div>
+            <div class="acordeon__item">
+                <button class="acordeon__cabecera">Lactancia materna <span class="acordeon__mas">+</span></button>
+                <div class="acordeon__cuerpo">
+                    <p>Durante los primeros días se produce el <strong>calostro</strong>, un alimento rico en defensas para el bebé. Posteriormente aparece la leche madura.</p>
+                    <p>La lactancia también ayuda a que el útero se contraiga más rápidamente.</p>
+                </div>
+            </div>
+            <div class="acordeon__item">
+                <button class="acordeon__cabecera">Cambios en el organismo <span class="acordeon__mas">+</span></button>
+                <div class="acordeon__cuerpo">
+                    <p>Es normal que durante los primeros días la madre:</p>
+                    <ul class="lista-check">
+                        <li>Orine con mayor frecuencia.</li>
+                        <li>Sude más de lo habitual.</li>
+                        <li>Se sienta cansada.</li>
+                        <li>Necesite descansar más tiempo.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signos y síntomas normales -->
+    <section class="seccion seccion--alterna" id="normales" data-anim>
+        <div class="seccion__head">
+            <span class="seccion__num">04</span>
+            <h2 class="seccion__titulo">Signos y síntomas normales</h2>
+        </div>
+        <p class="seccion__intro">Durante el puerperio es común presentar:</p>
+        <div class="chips">
+            <span class="chip">Sangrado vaginal moderado</span>
+            <span class="chip">Cólicos o entuertos</span>
+            <span class="chip">Cansancio</span>
+            <span class="chip">Sensibilidad o aumento de tamaño de las mamas</span>
+            <span class="chip">Sudoración</span>
+            <span class="chip">Cambios leves de humor</span>
+            <span class="chip">Hambre y mayor necesidad de líquidos</span>
+        </div>
+        <p class="seccion__nota">Estos síntomas suelen disminuir poco a poco con el paso de los días.</p>
+    </section>
+
+    <!-- Posibles complicaciones -->
+    <section class="seccion" id="complicaciones" data-anim>
+        <div class="seccion__head">
+            <span class="seccion__num">05</span>
+            <h2 class="seccion__titulo">Posibles complicaciones</h2>
+        </div>
+        <div class="seccion__grid dos-cols">
+            <div class="seccion__texto">
+                <p>Aunque la mayoría de las mujeres se recuperan sin problemas, algunas pueden presentar complicaciones.</p>
+                <div class="tarjetas">
+                    <article class="tarjeta">
+                        <h3>Hemorragia posparto</h3>
+                        <p>Es una pérdida excesiva de sangre después del parto y requiere atención médica inmediata.</p>
+                    </article>
+                    <article class="tarjeta">
+                        <h3>Infecciones</h3>
+                        <p>Pueden presentarse en el útero, en la herida de una cesárea o en el área del parto.</p>
+                    </article>
+                    <article class="tarjeta">
+                        <h3>Mastitis</h3>
+                        <p>Es una infección de la mama que produce dolor, enrojecimiento, inflamación y fiebre.</p>
+                    </article>
+                    <article class="tarjeta">
+                        <h3>Depresión posparto</h3>
+                        <p>Algunas madres pueden sentir tristeza intensa, ansiedad, pérdida de interés por las actividades diarias o dificultad para cuidar de sí mismas y del bebé.</p>
+                    </article>
+                    <article class="tarjeta tarjeta--ancha">
+                        <h3>Trombosis</h3>
+                        <p>Consiste en la formación de coágulos en las venas, generalmente de las piernas. Es una complicación poco frecuente, pero requiere atención inmediata.</p>
+                    </article>
+                </div>
+            </div>
+            <figure class="seccion__figura">
+                <img src="prevencion.jpeg" alt="Prevención de complicaciones en el puerperio" loading="lazy">
+            </figure>
+        </div>
+    </section>
+
+    <!-- Signos de alarma -->
+    <section class="seccion seccion--alarma" id="alarma" data-anim>
+        <div class="seccion__head">
+            <span class="seccion__num">06</span>
+            <h2 class="seccion__titulo">Signos de alarma</h2>
+        </div>
+        <div class="seccion__grid dos-cols">
+            <figure class="seccion__figura">
+                <img src="signos_De_alarma.jpeg" alt="Signos de alarma durante el puerperio" loading="lazy">
+            </figure>
+            <div class="seccion__texto">
+                <p class="alarma__intro">Busca atención médica de inmediato si presentas:</p>
+                <ul class="lista-alarma">
+                    <li>Fiebre mayor de 38 °C.</li>
+                    <li>Sangrado muy abundante.</li>
+                    <li>Loquios con mal olor.</li>
+                    <li>Dolor intenso que no mejora.</li>
+                    <li>Dolor fuerte o inflamación en una pierna.</li>
+                    <li>Dificultad para respirar.</li>
+                    <li>Dolor en el pecho.</li>
+                    <li>Desmayos o pérdida del conocimiento.</li>
+                    <li>Dolor de cabeza intenso acompañado de visión borrosa.</li>
+                </ul>
+                <p class="alarma__aviso">No esperes a que los síntomas empeoren.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diagnóstico y seguimiento -->
+    <section class="seccion" id="diagnostico" data-anim>
+        <div class="seccion__head">
+            <span class="seccion__num">07</span>
+            <h2 class="seccion__titulo">Diagnóstico y seguimiento</h2>
+        </div>
+        <div class="seccion__grid dos-cols">
+            <figure class="seccion__figura">
+                <img src="diagnostico.jpeg" alt="Diagnóstico y seguimiento del puerperio" loading="lazy">
+            </figure>
+            <div class="seccion__texto">
+                <p>Durante el puerperio, el personal de salud realiza controles para verificar que la recuperación sea adecuada. Estos controles incluyen:</p>
+                <ul class="lista-check">
+                    <li>Valoración del estado general de la madre.</li>
+                    <li>Control de la presión arterial, temperatura, pulso y respiración.</li>
+                    <li>Revisión del útero para comprobar que esté disminuyendo de tamaño.</li>
+                    <li>Evaluación de los loquios.</li>
+                    <li>Revisión de la lactancia materna.</li>
+                    <li>Controles médicos programados después del parto.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tratamiento y cuidados + Cuidados de enfermería -->
+    <section class="seccion seccion--alterna" id="cuidados" data-anim>
+        <div class="seccion__head">
+            <span class="seccion__num">08</span>
+            <h2 class="seccion__titulo">Tratamiento y cuidados</h2>
+        </div>
+        <div class="seccion__grid dos-cols">
+            <div class="seccion__texto">
+                <h3>Recomendaciones generales</h3>
+                <p>La recuperación depende principalmente de los cuidados diarios. Se recomienda:</p>
+                <ul class="lista-check">
+                    <li>Descansar siempre que sea posible.</li>
+                    <li>Mantener una alimentación saludable y variada.</li>
+                    <li>Beber suficiente agua.</li>
+                    <li>Tomar únicamente los medicamentos indicados por el profesional de salud.</li>
+                    <li>Amamantar al bebé con frecuencia.</li>
+                    <li>Caminar de forma progresiva según las indicaciones médicas.</li>
+                </ul>
+            </div>
+            <figure class="seccion__figura">
+                <img src="cuidados.jpeg" alt="Cuidados de la madre durante el puerperio" loading="lazy">
+            </figure>
+        </div>
+
+        <div class="subbloque" data-anim>
+            <h3 class="subbloque__titulo">Cuidados de enfermería</h3>
+            <p>El personal de enfermería cumple un papel fundamental durante el puerperio. Entre sus principales funciones están:</p>
+            <ul class="lista-check dos-cols-lista">
+                <li>Vigilar los signos vitales.</li>
+                <li>Revisar el útero y el sangrado.</li>
+                <li>Favorecer una correcta higiene.</li>
+                <li>Enseñar técnicas de lactancia materna.</li>
+                <li>Brindar educación para el cuidado de la madre y del recién nacido.</li>
+                <li>Detectar oportunamente cualquier complicación.</li>
+                <li>Ofrecer apoyo emocional a la madre y su familia.</li>
+            </ul>
+        </div>
+
+        <div class="subbloque" data-anim>
+            <h3 class="subbloque__titulo">Apoyo emocional y recomendaciones para una recuperación saludable</h3>
+            <div class="seccion__grid dos-cols">
+                <figure class="seccion__figura">
+                    <img src="apoyo_emocional.jpeg" alt="Apoyo emocional a la madre" loading="lazy">
+                </figure>
+                <ul class="lista-check">
+                    <li>Mantén una buena higiene personal.</li>
+                    <li>Lava tus manos antes de cuidar al bebé.</li>
+                    <li>Descansa cada vez que sea posible.</li>
+                    <li>Consume alimentos ricos en proteínas, frutas, verduras y abundantes líquidos.</li>
+                    <li>Asiste a todos los controles médicos.</li>
+                    <li>Realiza actividad física de manera progresiva cuando el profesional de salud lo indique.</li>
+                    <li>Evita automedicarte.</li>
+                    <li>Consulta sobre métodos de planificación familiar.</li>
+                    <li>Busca ayuda si te sientes triste, desanimada o sobrepasada durante varios días.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ¿Sabías que? -->
+    <section class="seccion seccion--sabias" id="sabias" data-anim>
+        <div class="seccion__head">
+            <span class="seccion__num">09</span>
+            <h2 class="seccion__titulo">¿Sabías que?</h2>
+        </div>
+        <div class="sabias-grid">
+            <div class="sabia"><span>💙</span><p>La lactancia materna ayuda al útero a recuperar su tamaño más rápidamente.</p></div>
+            <div class="sabia"><span>💙</span><p>Los loquios cambian de color conforme el cuerpo se recupera.</p></div>
+            <div class="sabia"><span>💙</span><p>Descansar favorece una recuperación física y emocional más rápida.</p></div>
+            <div class="sabia"><span>💙</span><p>El apoyo de la familia es fundamental para el bienestar de la madre durante el puerperio.</p></div>
+            <div class="sabia"><span>💙</span><p>Acudir a los controles posparto permite detectar a tiempo cualquier complicación.</p></div>
+        </div>
+    </section>
+
+    <!-- Mensaje final -->
+    <section class="mensaje-final" data-anim>
+        <h2>Mensaje final</h2>
+        <p>Cuidar a la madre durante el puerperio es tan importante como cuidar al recién nacido. Una recuperación segura, acompañada de información, apoyo familiar y controles de salud, favorece el bienestar de la madre, fortalece el vínculo con su bebé y contribuye a una maternidad saludable.</p>
+        <figure class="mensaje-final__recomendacion">
+            <img src="recomendaciones.jpeg" alt="Recomendaciones para una maternidad saludable" loading="lazy">
+        </figure>
+    </section>
+
+</main>
+
+<!-- Botón volver arriba -->
+<button class="volver-top" id="volverTop" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<footer class="pie">
+    <img src="LOGO_PUERPERIO.png" alt="Logo Puerperio" class="pie__logo">
+    <p>Instituto Superior Tecnológico Universitario Libertad · Curso 3A · 31/07/2026</p>
+    <p class="pie__integrantes">María Saltos · Jessica Lisintuña · Milton Esparza · Andy Jaramillo · Steven Quera</p>
+    <p class="pie__marca">Puerperio — El cuidado de la madre después del parto</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
